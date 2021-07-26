@@ -1,0 +1,39 @@
+
+    
+    /*operaciones*/
+    $ancho: 1440px;
+    /*
+    .bodyContacto{
+        width: $ancho/2;
+        display: flex;
+        padding: 50px;
+        
+        .maps{
+            display: inline-block;
+        }
+    }
+*/
+
+    .bodyContacto {
+        display: inline-block;
+        margin: 30px 0 30px 0;
+        gap: 1px 1px;
+        font-size: 20px;
+        grid-template-areas:
+        "formulario" "maps";
+    }
+    
+    .formulario {
+        grid-area: formulario;
+        background-color: #EFF4F7;
+    }
+    .maps {
+        grid-area: maps;
+        display: inline-block;
+        position: left;
+        margin-left: 300px;
+        margin-top: 50px;
+
+        
+    }
+    

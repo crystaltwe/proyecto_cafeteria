@@ -1,0 +1,26 @@
+.indexNosotros{
+    margin: 60px 80px auto;
+    display: inline-block;
+    position: left;
+    .indexNosotros__h2 {
+        margin: 30px;
+    }
+}
+
+.animacionNos {
+    animation-duration: 3s;
+		animation-name: slidein;
+	  }
+	  
+	  @keyframes slidein {
+		from {
+		  margin-left: 80%;
+		  width: 250%
+		}
+	  
+		to {
+		  margin-left: 0%;
+		  width: 100%;
+		}
+      }
+      

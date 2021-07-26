@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/efd522e2c0.js" crossorigin="anonymous"></script>
+    <title>Seccion contacto de mi sitio web</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <header class="header"> 
+        <div class="container header__container">
+            <h1>Cafeteria Logo </h1>
+                <nav>
+                    <a href="../index.html">Home</a>
+                    <a href="../paginas/nosotros.html">Nosotros</a>
+                    <a href="../paginas/carta.html">Carta</a>
+                    <a href="../paginas/eventos.html">Eventos</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+        </div>
+    </header>
+    
+    <section class="container bodyContacto">
+       <h2>Contacta con nosotros</h2>
+        <form class="formulario" action="" >
+            <label for="Nombre"> Nombre:</label>
+            <input type="text" name="Nombre" > <br>
+            <label for="Apellido">Apellido</label>
+            <input type="text" name="Apellido" > <br>
+            <label for="Teléfono"> Teléfono: </label>
+            <input type="text" name="Teléfono"> <br>
+            <label for="Email"> E-mail:</label>
+            <input type="text" name="Email"> <br>
+            <div>Motivo
+                <select name="respuesta">
+                <option value="option">Reserva</option>
+                <option value="option">Suscripción</option>
+                <option value="option">Otro</option>
+                </select> 
+            </div>
+            <label for="Mesaje"> Mensaje:</label> <br>
+            <textarea name="Mensaje" id="Mensaje" cols="30" rows="10"></textarea>
+       
+        <div>
+            <input type="checkbox" name="acepta" value="1">Acepto términos y condiciones de privacidad
+        </div>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar formulario">
+
+    </section>
+    
+    <section class="maps">
+        <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5725.854884954633!2d-64.19384685738544!3d-31.424768116673892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a287d4c03295%3A0x8e312cf095e3a85e!2zR8O8ZW1lcw!5e0!3m2!1ses!2sar!4v1623855870776!5m2!1ses!2sar" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section>
+
+    <footer>
+        <div class="container footer__content">
+            <ul class="footer__content--info">
+                <li>Calle falsa 555</li>
+                <li> +54 9 351 2345541</li>
+            </ul>
+            <ul  class="footer__content--redes">
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+            </ul>
+        </div>
+        <p> Copyright - 2021</p>
+    </footer>
+</body>
+</html>

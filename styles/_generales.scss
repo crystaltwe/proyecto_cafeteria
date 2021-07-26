@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//variables
+
+$titulo: 'roboto', sans-serif;
+$texto: 'lato', sans-serif;
+
+$colorPrincipal: rgb(24, 102, 107);
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $titulo;
+    color: $colorPrincipal;
+}
+
+a, p {
+    font-family: $texto;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 700;
+    color: $colorPrincipal;
+    font-size: 20px;
+}
+
+li{
+    list-style: none;
+    font-family: $texto;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+

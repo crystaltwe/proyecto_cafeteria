@@ -1,0 +1,151 @@
+/*imagen de portada*/
+.banner {
+	.banner__img {
+		height: 450px;
+    	width: 100%;
+    	background-position: center center ;
+    	background-size: cover;
+	}
+    
+}
+
+
+.indexContainer {
+    margin: 40px auto;
+
+    .indexContainer__h2{
+        text-align: center;
+        margin-bottom: 40px;
+		margin: 50px;
+        
+    }
+    .indexContainer__p {
+        @media(max-width:992px){
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.videoCafe{
+	margin: 20px auto;
+
+	.videoCafe__mod{
+		display: flex;
+		padding: 10px;
+		width: 1200px;
+		height: 400px;
+		margin-top: 40px;
+		margin-left: 20px;
+		border-radius: 5px;
+	}
+}
+
+
+
+.carta {
+	background-color: #cccccc;
+	border-radius: 10px;
+	padding: 70px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin-bottom: 50px; 
+}
+
+.carta__titulo {
+	font-size:20px;
+	margin-bottom: 20px;
+    flex-basis: 50%;
+    
+}
+
+.carta__parrafo {
+	line-height: 20px;
+	font-size:16px;
+}
+
+.boton {
+    width: 100px;
+	height: 60px;
+	padding: 10px;
+	background-color: rgb(255, 0, 0);
+    border-radius: 5%;
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+    position: absolute;
+	right: 20px;
+	bottom: -25px;
+    cursor: pointer;
+}
+
+
+.divA{
+	width: 100px;
+	height: 50px;
+	background: red;
+	transition: width 2s;
+  }
+
+  .divA:hover {
+
+	width: 150px;
+  }
+ 
+  .pAnimacion {
+		animation-duration: 4s;
+		animation-name: slidein;
+	  }
+	  
+	  @keyframes slidein {
+		from {
+		  margin-left: 100%;
+		  width: 300%
+		}
+	  
+		to {
+		  margin-left: 0%;
+		  width: 100%;
+		}
+	  }
+
+/* each, bucle */
+
+$lista1: red, green, yellow, blue;
+
+$primario: nth($lista1, 4);
+
+a{
+	color: $primario;
+}
+
+@each $color in lista1 {
+	.#{$color} {
+		background-color: $color;
+	}
+}
+
+/*maps
+$headings: (
+	h1: 4em,
+	h2: 3em,
+	h3:2em,
+);
+
+$h1: map-get($headings, h1);
+
+
+$colores: (
+	pri: yellow
+	sec: pink
+
+)
+		
+
+$combinada: map-merge($headings, $colores);
+
+h1{
+	font-size: $combinada;
+}
+*/
