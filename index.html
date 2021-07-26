@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="keywords" content="html, desarrollo, web, diseño, cafeteria"> 
+    <meta name="description" content="Este es un sitio web aplicando lo aprendido en desarrollo web">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/efd522e2c0.js" crossorigin="anonymous"></script>
+    <title>Inicio / ejemplo sitio web</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <header class="header"> 
+        <div class="container header__container">
+            <h1>Cafeteria Logo </h1>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="paginas/nosotros.html">Nosotros</a>
+                    <a href="paginas/carta.html">Carta</a>
+                    <a href="../paginas/eventos.html">Eventos</a>
+                    <a href="paginas/contacto.html">Contacto</a>
+                </nav>
+        </div>
+    </header>
+
+    <div class="banner">
+        <img class="banner__img" src= "imagenes/fondogranodecafe.jpg" alt="cafeengrano">
+    </div>
+
+    <section class="container indexContainer">
+                <h2 class="indexContainer__h2 pAnimacion">Bienvenidos</h2>
+                    <p class="indexContainer__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Quos, qui? Obcaecati illo sit, repellendus eum earum, 
+                    iste beatae dicta velit quos quo maiores corrupti necessitatibus nemo,
+                    magnam corporis nam doloremque.Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Quos, qui? Obcaecati illo sit, repellendus eum earum, 
+                    iste beatae dicta velit quos quo maiores corrupti necessitatibus nemo,
+                    magnam corporis nam doloremque.Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Quos, qui? Obcaecati illo sit, repellendus eum earum, 
+                    iste beatae dicta velit quos quo maiores corrupti necessitatibus nemo,
+                    magnam corporis nam doloremque.</p>
+    </section>
+    
+    <section class="container">
+		<div class="carta"> 
+
+                <h2 class="carta__titulo">
+                    CARTA EN PDF
+                </h2>
+
+                    <p class="carta__parrafo ">
+                        ¡Echa un vistazo!
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Exercitationem dicta suscipit delectus ut consectetur porro deserunt molestias facilis aliquam vel minima,
+                        hic optio temporibus laboriosam rem quaerat, itaque voluptate iusto?
+                        
+                    </p>
+                    <a href="#" class="boton divA"> Ver menú </a>
+                    
+		</div>
+	</section>
+
+    <section class="videoCafe">
+        <div class="videoCafe__mod">
+            <video onloadstart="this.muted=true" autoplay loop>
+                <source src="imagenes/preparacioncafe.mp4"> 
+            </video>
+        </div>
+    </section>
+
+    <section class="carta">
+        <p class="carta__parrafo ">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Quos, qui? Obcaecati illo sit, repellendus eum earum, 
+            iste beatae dicta velit quos quo maiores corrupti necessitatibus nemo,
+            magnam corporis nam doloremque.Lorem ipsum dolor, 
+            sit amet consectetur adipisicing elit. 
+            </p>
+    </section>
+    
+    <footer>
+        <div class="container footer__content">
+            <ul class="footer__content--info">
+                <li>Calle falsa 555</li>
+                <li> +54 9 351 2345541</li>
+            </ul>
+            <ul  class="footer__content--redes">
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+            </ul>
+        </div>
+        <p> Copyright - 2021</p>
+    </footer>
+</body>
+</html>
