@@ -2,32 +2,94 @@
 <html lang="en">
 <head>
     
-    <meta name="keywords" content="html, desarrollo, web, diseño, cafeteria"> 
-    <meta name="description" content="Este es un sitio web aplicando lo aprendido en desarrollo web">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/efd522e2c0.js" crossorigin="anonymous"></script>
-    <title>Inicio / ejemplo sitio web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="imagenes/icono1.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/main.css">
+    <title>Pagina web Micaela Gomez</title>
+    
+
 </head>
 <body>
-    <header class="header"> 
-        <div class="container header__container">
-            <h1>Cafeteria Logo </h1>
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="paginas/nosotros.html">Nosotros</a>
-                    <a href="paginas/carta.html">Carta</a>
-                    <a href="../paginas/eventos.html">Eventos</a>
-                    <a href="paginas/contacto.html">Contacto</a>
-                </nav>
-        </div>
-    </header>
+    <header> 
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>Nombre de la cafeteria</a>
+        <div id="menu-bar" class="fas fa-bars"></div>
 
+        <nav class="navbar">    
+            <a href="index.html">Inicio</a>
+            <a href="paginas/nosotros.html">Nosotros</a>
+            <a href="paginas/carta.html">Carta</a>
+            <a href="../paginas/Productos.html">Productos</a>
+            <a href="paginas/contacto.html">Contacto</a>
+        </nav>
+        
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo"> Nuestros productos</h2>
+            <div class="contenedor-sobre-nosotros">¿quienes somos?
+                <img src="imagenes/cafeenmesa.jpg" alt="imagencafe">
+                <div class="contenido.textos">
+                    <h3><span>1</span>Nuestros productos</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nam necessitatibus accusamus neque nemo iusto, labore eveniet quidem eos perspiciatis rem laudantium numquam deserunt fugit voluptatem. Iure aut itaque eaque.</p>
+                    <h3><span>2</span>Nuestros productos</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nam necessitatibus accusamus neque nemo iusto, labore eveniet quidem eos perspiciatis rem laudantium numquam deserunt fugit voluptatem. Iure aut itaque eaque.</p>
+
+                </div>
+            </div>
+        </section>
+        <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Portafolio</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="" alt="chicosenbarra">
+                        <div class="hover-galeria">
+                            <img src="" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="" alt="chicosenbarra">
+                        <div class="hover-galeria">
+                            <img src="" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="" alt="chicosenbarra">
+                        <div class="hover-galeria">
+                            <img src="" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="" alt="chicosenbarra">
+                        <div class="hover-galeria">
+                            <img src="" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="" alt="chicosenbarra">
+                        <div class="hover-galeria">
+                            <img src="" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="" alt="chicosenbarra">
+                        <div class="hover-galeria">
+                            <img src="" alt="">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <div class="banner">
         <img class="banner__img" src= "imagenes/fondogranodecafe.jpg" alt="cafeengrano">
     </div>
@@ -96,5 +158,7 @@
         </div>
         <p> Copyright - 2021</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
