@@ -447,8 +447,7 @@ footer .footer__content .footer__content--redes li i {
   border-radius: 5px;
 }
 
-/*media queris*/
-/* media queries  */
+/* media queries MAAAAAAAAAAAL  */
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -716,14 +715,15 @@ header .navbar a:hover {
 }
 
 /*inicio de nosotros */
-.indexNosotros {
+.inicio_nosotros {
+  margin-top: 60px;
   font-size: 4rem;
   color: #333;
   text-align: center;
 }
 
-.indexNosotros .indexNosotros_p {
-  font-size: 2rem;
+.inicio_nosotros--p {
+  font-size: 1.7rem;
   color: #666;
   padding: 1rem 0;
 }

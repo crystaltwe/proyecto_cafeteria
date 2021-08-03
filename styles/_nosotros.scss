@@ -125,19 +125,18 @@ section{
 
 /*inicio de nosotros */
 
-.indexNosotros{
-    
-    font-size: 4rem;
-	  color:#333;
-	  text-align: center;
+.inicio_nosotros{
+  margin-top: 60px;
+	font-size: 4rem;
+	color:#333;
+	text-align: center;
+  }
 
-    .indexNosotros_p {
-      
-      font-size: 2rem;
-	    color:#666;
-	    padding:1rem 0;
-    }
-}
+  .inicio_nosotros--p{
+	font-size: 1.7rem;
+	color:#666;
+	padding:1rem 0;
+  }
 
 .animacionNos {
     animation-duration: 3s;
