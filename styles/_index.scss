@@ -40,11 +40,22 @@
   }
   
   .home .content p{
-	font-size: 1.7rem;
+	font-size: 1.4rem;
 	color:#666;
 	padding:1rem 0;
   }
   
+  .home_nosotros{
+	font-size: 4rem;
+	color:#333;
+	text-align: center;
+  }
+
+  .home_nosotros--p{
+	font-size: 1.7rem;
+	color:#666;
+	padding:1rem 0;
+  }
 .indexContainer {
     margin: 40px auto;
 
@@ -75,112 +86,86 @@
 		border-radius: 5px;
 	}
 }
-
-
-
-.carta {
-	background-color: #cccccc;
-	border-radius: 10px;
-	padding: 70px;
+.footer{
+	background:#000;
+	text-align: center;
+  }
+  
+  .footer .share{
 	display: flex;
-	align-items: center;
-	position: relative;
-	margin-bottom: 50px; 
-}
-
-.carta__titulo {
-	font-size:20px;
-	margin-bottom: 20px;
-    flex-basis: 50%;
-    
-}
-
-.carta__parrafo {
-	line-height: 20px;
-	font-size:16px;
-}
-
-.boton {
-    width: 100px;
-	height: 60px;
-	padding: 10px;
-	background-color: rgb(255, 0, 0);
-    border-radius: 5%;
-	color: white;
-	display: inline-block;
-	text-decoration: none;
-    position: absolute;
-	right: 20px;
-	bottom: -25px;
-    cursor: pointer;
-}
-
-
-.divA{
-	width: 100px;
-	height: 50px;
-	background: red;
-	transition: width 2s;
+	gap:1.5rem;
+	justify-content: center;
+	flex-wrap: wrap;
   }
-
-  .divA:hover {
-
-	width: 150px;
+  
+  .footer .credit{
+	padding:2.5rem 1rem;
+	color:#fff;
+	font-weight: normal;
+	font-size: 2rem;
   }
- 
-  .pAnimacion {
-		animation-duration: 4s;
-		animation-name: slidein;
-	  }
-	  
-	  @keyframes slidein {
-		from {
-		  margin-left: 100%;
-		  width: 300%
-		}
-	  
-		to {
-		  margin-left: 0%;
-		  width: 100%;
-		}
-	  }
+  
+  .footer .credit span{
+	color:var(--red);
+  }
+  
 
-/* each, bucle */
+/*media queris*/
+/* media queries  */
 
-$lista1: red, green, yellow, blue;
+@media(max-width:991px){
 
-$primario: nth($lista1, 4);
-
-a{
-	color: $primario;
-}
-
-@each $color in lista1 {
-	.#{$color} {
-		background-color: $color;
+	html{
+	  font-size: 55%;
 	}
-}
-
-/*maps
-$headings: (
-	h1: 4em,
-	h2: 3em,
-	h3:2em,
-);
-
-$h1: map-get($headings, h1);
-
-
-$colores: (
-	pri: yellow
-	sec: pink
-
-)
-		
-
-$combinada: map-merge($headings, $colores);
-
-h1{
-	font-size: $combinada;
-}
-*/
+  
+	header{
+	  padding:2rem;
+	}
+  
+	section{
+	  padding:2rem;
+	}
+  
+  }
+  
+  @media(max-width:768px){
+  
+	#menu-bar{
+	  display: initial;
+	}
+  
+	header .navbar{
+	  position: absolute;
+	  top:100%; left: 0; right:0;
+	  background: #f7f7f7;
+	  border-top: .1rem solid rgba(0,0,0,.1);
+	  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+  
+	header .navbar.active{
+	  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	}
+  
+	header .navbar a{
+	  margin: 1.5rem;
+	  padding:1.5rem;
+	  display: block;
+	  border:.2rem solid rgba(0,0,0,.1);
+	  border-left:.5rem solid var(--red);
+	  background:#fff;
+	}
+  
+  }
+  
+  @media(max-width:450px){
+  
+	html{
+	  font-size: 50%;
+	}
+  
+	.order .row form .inputBox input{
+	  width:100%;
+	}
+  
+  }

@@ -353,6 +353,18 @@ footer .footer__content .footer__content--redes li i {
 }
 
 .home .content p {
+  font-size: 1.4rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+.home_nosotros {
+  font-size: 4rem;
+  color: #333;
+  text-align: center;
+}
+
+.home_nosotros--p {
   font-size: 1.7rem;
   color: #666;
   padding: 1rem 0;
@@ -391,120 +403,85 @@ footer .footer__content .footer__content--redes li i {
   border-radius: 5px;
 }
 
-.carta {
-  background-color: #cccccc;
-  border-radius: 10px;
-  padding: 70px;
+.footer {
+  background: #000;
+  text-align: center;
+}
+
+.footer .share {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  margin-bottom: 50px;
+  gap: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.carta__titulo {
-  font-size: 20px;
-  margin-bottom: 20px;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+.footer .credit {
+  padding: 2.5rem 1rem;
+  color: #fff;
+  font-weight: normal;
+  font-size: 2rem;
 }
 
-.carta__parrafo {
-  line-height: 20px;
-  font-size: 16px;
+.footer .credit span {
+  color: var(--red);
 }
 
-.boton {
-  width: 100px;
-  height: 60px;
-  padding: 10px;
-  background-color: red;
-  border-radius: 5%;
-  color: white;
-  display: inline-block;
-  text-decoration: none;
-  position: absolute;
-  right: 20px;
-  bottom: -25px;
-  cursor: pointer;
-}
-
-.divA {
-  width: 100px;
-  height: 50px;
-  background: red;
-  -webkit-transition: width 2s;
-  transition: width 2s;
-}
-
-.divA:hover {
-  width: 150px;
-}
-
-.pAnimacion {
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-name: slidein;
-          animation-name: slidein;
-}
-
-@-webkit-keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
+/*media queris*/
+/* media queries  */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
   }
-  to {
-    margin-left: 0%;
+  header {
+    padding: 2rem;
+  }
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-bar {
+    display: initial;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #f7f7f7;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  header .navbar a {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    display: block;
+    border: 0.2rem solid rgba(0, 0, 0, 0.1);
+    border-left: 0.5rem solid var(--red);
+    background: #fff;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .order .row form .inputBox input {
     width: 100%;
   }
 }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-/* each, bucle */
-a {
-  color: blue;
-}
-
-.lista1 {
-  background-color: lista1;
-}
-
-/*maps
-$headings: (
-	h1: 4em,
-	h2: 3em,
-	h3:2em,
-);
-
-$h1: map-get($headings, h1);
-
-
-$colores: (
-	pri: yellow
-	sec: pink
-
-)
-		
-
-$combinada: map-merge($headings, $colores);
-
-h1{
-	font-size: $combinada;
-}
-*/
 * {
   margin: 0;
   padding: 0;
@@ -843,6 +820,17 @@ header .navbar a:hover {
           animation-duration: 3s;
   -webkit-animation-name: slidein;
           animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 80%;
+    width: 250%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 @keyframes slidein {
