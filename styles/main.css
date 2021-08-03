@@ -289,6 +289,12 @@ footer .footer__content .footer__content--redes li i {
   cursor: pointer;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .home {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -370,21 +376,59 @@ footer .footer__content .footer__content--redes li i {
   padding: 1rem 0;
 }
 
-.indexContainer {
-  margin: 40px auto;
+/*platos populares */
+.popular .box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
-.indexContainer .indexContainer__h2 {
+.popular .box-container .box {
+  padding: 2rem;
+  background: #fff;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  border-radius: .5rem;
   text-align: center;
-  margin-bottom: 40px;
-  margin: 50px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+  position: relative;
 }
 
-@media (max-width: 992px) {
-  .indexContainer .indexContainer__p {
-    width: 90%;
-    margin: 0 auto;
-  }
+.popular .box-container .box img {
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: .5rem;
+}
+
+.popular .box-container .box .price {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  background: var(--red);
+  color: #fff;
+  font-size: 2rem;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+}
+
+.popular .box-container .box h3 {
+  color: #333;
+  font-size: 2.5rem;
+  padding-top: 1rem;
+}
+
+.popular .box-container .box .stars i {
+  color: gold;
+  font-size: 1.7rem;
+  padding: 1rem .1rem;
 }
 
 .videoCafe {
@@ -401,34 +445,6 @@ footer .footer__content .footer__content--redes li i {
   margin-top: 40px;
   margin-left: 20px;
   border-radius: 5px;
-}
-
-.footer {
-  background: #000;
-  text-align: center;
-}
-
-.footer .share {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1.5rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.footer .credit {
-  padding: 2.5rem 1rem;
-  color: #fff;
-  font-weight: normal;
-  font-size: 2rem;
-}
-
-.footer .credit span {
-  color: var(--red);
 }
 
 /*media queris*/
@@ -805,14 +821,21 @@ header .navbar a:hover {
   display: none;
 }
 
+/*inicio de nosotros */
 .indexNosotros {
   margin: 60px 80px auto;
   display: inline-block;
   position: left;
+  font-size: 4rem;
+  color: #333;
+  text-align: center;
 }
 
-.indexNosotros .indexNosotros__h2 {
+.indexNosotros .indexNosotros_p {
   margin: 30px;
+  font-size: 2rem;
+  color: #666;
+  padding: 1rem 0;
 }
 
 .animacionNos {

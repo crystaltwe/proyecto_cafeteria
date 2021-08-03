@@ -129,13 +129,21 @@ section{
     }
 
 
+/*inicio de nosotros */
 
 .indexNosotros{
     margin: 60px 80px auto;
     display: inline-block;
     position: left;
-    .indexNosotros__h2 {
-        margin: 30px;
+    font-size: 4rem;
+	  color:#333;
+	  text-align: center;
+
+    .indexNosotros_p {
+      margin: 30px;
+      font-size: 2rem;
+	    color:#666;
+	    padding:1rem 0;
     }
 }
 
