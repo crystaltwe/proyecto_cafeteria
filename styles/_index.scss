@@ -47,6 +47,7 @@
     font-size: 3.5rem;
     padding:1rem;
     color:#666;
+   
   }
   
     .heading span{
@@ -96,10 +97,10 @@
         align-items: center;
         justify-content: space-between;
         background:#fff;
-        padding:2rem 9%;
+        padding:1.5rem 7%;
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
       }
-      
+     
         header .logo{
             font-size: 2.5rem;
             font-weight: bolder;
@@ -155,6 +156,7 @@
 	.home .content{
 		flex:1 1 40rem;
 		padding-top: 6.5rem;
+    margin-top: 50px;
 	}
 	
 	.home .image{
@@ -320,16 +322,58 @@
 
 }
 
+/* media queries  */
 
-/* media queries celu */
-@media screen {max-width: 993px;
-  header,
-  .home,
-  .footer__content,
-  {
-    max-width: 900px;
-    padding: 0 20px;
+@media(max-width:991px){
+
+  html{
+    font-size: 55%;
   }
-  
+
+  header{
+    padding:2rem;
+  }
+
+  section{
+    padding:2rem;
+  }
+
 }
-  
+
+@media(max-width:768px){
+
+  #icon-menu{
+    display: initial;
+  }
+
+  header .navbar{
+    position: absolute;
+    top:100%; left: 0; right:0;
+    background: #f7f7f7;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  header .navbar a{
+    margin: 1.5rem;
+    padding:1.5rem;
+    display: block;
+    border:.2rem solid rgba(0,0,0,.1);
+    border-left:.5rem solid var(--red);
+    background:#fff;
+  }
+
+}
+
+@media(max-width:450px){
+
+  html{
+    font-size: 50%;
+  }
+
+
+}
